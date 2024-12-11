@@ -4,7 +4,7 @@ El gateway es el punto de comunicación entre nuestros clientes y nuestros servi
 
 ## Dev
 
-1. Clomar el repositorio
+1. Clonar el repositorio
 2. Instalar dependencias
 3. Crear un archivo `.env` basado en el `env.template`
 4. Levantar el servidor de NATS
@@ -23,3 +23,11 @@ http://localhost:8222/
 
 https://docs.nestjs.com/microservices/nats
 npm i --save nats
+
+## PROD
+
+Ejecutar
+
+```
+docker build -f Dockerfile.prod -t client-gateway .
+```
